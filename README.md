@@ -1,33 +1,20 @@
-# HosseinKarami.com
+# Jekyll template
+Beautiful responsive portfolio style template for designers and web developers
 
-The Jekyll build for hosseinkarami.com, built on [FastShell](http://hosseinkarami.github.io/fastshell/).
+[![Gitter](https://badges.gitter.im/nikrich/jekyll-slender-template.svg)](https://gitter.im/nikrich/jekyll-slender-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-* Learn more about how to use Jekyll here:  [jekyllrb.com](http://jekyllrb.com)
+![preview](http://i.imgur.com/9Nz6Ib9.jpg)
 
-* Site: [HosseinKarami.com](http://hosseinkarami.com)
-* Twitter: [@_Karamii](https://twitter.com/_Karamii)
+## Demo
+Find a demo [here](http://nikrich.github.io/jekyll-slender-template/#)
+
+## Contributing
+
+1. Clone the repo
+2. Checkout the dev branch ( Do not work directly on master )
+3. Use ```jekyll serve``` to run the project
+4. Make your changes and test
+5. Submit a pull request
 
 
-## License
-
-#### The MIT License (MIT)
-
-Copyright (c) Hossein Karami <hosseinkarami@outlook.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Inspired by [Balraj Chana](https://dribbble.com/shots/2380700-New-Portfolio-Site-Live)
