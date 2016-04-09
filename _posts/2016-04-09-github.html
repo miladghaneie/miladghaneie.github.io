@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "ایجاد حساب گیت هاب"
+date:   2016-04-09 12:31:03 +0430
+categories: jekyll update
+---
+
+<article itemprop="articleBody" class="post-content">
+   
+<p>در قسمت دوم آموزش نصب jekyll، نحوه اتصال این برنامه به یک صفحه github و طریقه پیکربندی اون رو توضیح خواهم داد. در اینجا نکته ای که بسیار اهمیت داره نحوه پیکربندی برنامه تو ویندوز هست.
+چون اجرای jekyll روی ویندوز با تنظیمات پیش فرض github به دلیل ناسازگاری افزونه هایی مثل pygments پیغام خطا میده.</p>
+
+
+<p>بعد از ثبت نام در وبسایت <a href="http://github.com">github</a>، در منو بالا New Repository رو انتخاب کرده و یک <a href="http://git-scm.com/book/en/Getting-Started-Git-Basics">مخزن</a> ایجاد کنید. در قسمت نام مخزن، عبارت <span class="inline-code">username.github.io</span> رو وارد کنید (بجای username نام کاربری خودتون رو بنویسید). ما بقی تنظیمات را در حالت پیش فرض قرار دهید.</p>
+
+<p>سپس با استفاده از نرم افزار github در ویندوز از مخزن خود clone بگیرید و اونو تو یک فولدر بریزید <a href="https://help.github.com/articles/adding-repositories-with-github-for-windows/">(آموزش)</a>.</p>
+
+<p>خب حالا نوبت به jekyll میرسه. در اینجا باید یک وبسایت جدید با jekyll تو همون مسیر ایجاد کنید. به طور مثال اگه مسیر مخزن شما <span class="inline-code">C:\username.github.io</span> باشه کد زیر رو وارد می کنید.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="kp">new</span> <span class="ss">C</span><span class="p">:\</span><span class="n">username</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span></code></pre></div>
+
+<p>تنظیمات مربوط به وبسایتتون که شامل نام و توضیحات و … میشه رو تو فایل <span class="inline-code">_config.yml</span> وارد کنید. بعد از تغییر دادن محتویات این فایل اون رو تو همین مسیر با نام جدید مثلا <span class="inline-code">win_config.yml</span> کپی کنید. تو فایل جدید کد زیر رو به انتهای فایل اضافه کنید.</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">highlight: rouge</code></pre></div>
+
+<p>دلیل ایجاد این فایل و اضافه کردن این خط اینه که می خوایم برنامه تو ویندوز با فایل تنظیمات دوم اجرا بشه تا مشکلی برای اون پیش نیاد ولی موقع آپلود و قرار گرفتن روی سرور فایل اصلی اجرا بشه.</p>
+
+<p>اگر دقت کنید یک فایل با نام <span class="inline-code">.gitignore</span> توی مسیر اصلی مخزنتون وجود داره. اونرو باز کنید و اسم فایل دوم رو بهش اضافه کنید. این فایل مشخص می کنه که چه فولدرها و فایلهایی از کامپیوترتون به سرور آپلود نشه. احتمالا فولدر <span class="inline-code">_site</span> قبلا به این فایل اضافه شده.</p>
+
+<p>بعد از اینکه تموم این تنظیمات رو انجام دادید می تونید با jekyll وبسایت خودتون رو بسازید و اونرو بعد از هر بار commit کردن تو آدرس username.github.io ببینید.</p>
+
+
+  </article>
