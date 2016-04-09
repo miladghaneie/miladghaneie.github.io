@@ -1,12 +1,181 @@
 ---
 layout: post
-title:  "آموزش جکیل"
+title:  "آموزش جکیل(ایجاد یک ‍‍پست)"
 date:   2016-04-09 11:31:03 +0430
 categories: jekyll update
 ---
 
-{% highlight ruby %}
-	jekyll new .
-	jekyll serve -w
-{% endhighlight %}
+ایجاد یک فایل مثل فرمت زیر :
+سال-ماه-روز-عنوان.فرمت
+<br>
+<br>
+<div dir="ltr" class="highlighter-rouge"><pre class="highlight"><code>2015-02-17-my-first-post.md
+</code></pre>
+</div>
 
+<br>
+<br>
+
+حالا فایل ایجاد شده را  باز میکنیم :
+
+حالا برای آن خصوصیاتی را تعرف میکنیم که به آن 
+ fornt-matter
+  گفته میشه :
+  
+  <div dir="ltr" class="highlighter-rouge"><pre class="highlight"><code>---
+layout: post 
+title: Your First Post
+published: false
+date: 2015-02-01
+categories: [blogging]
+tags: [blogging]
+---
+</code></pre>
+</div>
+
+
+<br>
+<br>
+توضیحات :
+<br>
+در خط اول‌:
+یعنی در فولدر 
+layout
+ از فایل 
+ post 
+ ارث بری کردیم
+ 
+ <br>
+ در خط دوم عنوان پست مشخص شده است
+ <br>
+ در خط سوم :
+ مشخص میکند که \ست در سایت نمایش داده شود یا نه.
+ <br>
+ در خط چهارم:
+ تاریخ انتشار پست. اگر این عبارت را مقدار ندیم تاریخ فایل قرار میگیرددر سایت.
+ <br>
+ در خط پنجم لیست دسته هامشخص میشود
+ <br>
+ در خط بعدی لیستی از تگ ها که من توصیه نمی کنم استفاده از آن را.
+ <br>
+ <br>
+ <br>
+  <b>حالا خوصوصیات صفحه رو گفتیم میرسیم به ایجاد محتوا:<b>
+  
+  <br>
+  <br>
+  
+
+<div class="panel seriesNote" dir="ltr">
+
+
+<p><strong>Common Markdown Tags</strong></p>
+
+<p>####Headers</p>
+
+<p>A #  starting  a line indicates to makebitba header and the number # indicates  the size of the header tag.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#  = 	h1
+## = h2
+and so on up the an h6
+</code></pre>
+</div>
+
+<p><strong>examples</strong></p>
+
+<h1 id="h1">h1</h1>
+
+<h2 id="h2">h2</h2>
+
+<h2 id="h3">h3</h2>
+
+<h3 id="h4">h4</h3>
+
+<h4 id="h5">h5</h4>
+
+<h4 id="h6">h6</h4>
+
+<h4 id="numbered-list--or-bullets">Numbered list  or Bullets</h4>
+
+<p>For bullets: start a line with a * or -.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* sample list
+* next bullet
+</code></pre>
+</div>
+
+<ul>
+  <li>sample list</li>
+  <li>next bullet</li>
+</ul>
+
+<p>For numbered list start with a 1 or the number you want to start with.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1. sample ordered list
+2. number 2
+</code></pre>
+</div>
+
+<ol>
+  <li>sample ordered list</li>
+  <li>number 2</li>
+</ol>
+
+<h4 id="bold">Bold</h4>
+
+<p>surround  the text you to build with 2 ** and then put 2 more after the text  to end the bold.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>**sample bold**
+</code></pre>
+</div>
+
+<p><strong>sample bold</strong></p>
+
+<h4 id="links">Links</h4>
+
+<p>link to other pages:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[link name display](http://myurl.com)
+</code></pre>
+</div>
+
+<p><a href="http://myurl.com">link name display</a></p>
+
+<h3 id="code-highlighting">Code Highlighting</h3>
+
+<p>There are 2 ways: tab the line in and it will group the text like the examples above.
+or use the highlighter markup</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">{% highlight c# %}	
+// some c# code	
+var a = "bad variable name"
+{% endhighlight %}</code></pre></figure>
+
+<h2 id="highlighting-text-without-the-code-highlighting">Highlighting text without the code highlighting</h2>
+
+<p>Start the line with a tab and it will automatically do it for you.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>you will get text like this if you start the line with a tab.
+</code></pre>
+</div>
+
+<h2 id="further-reading-on-markdown">Further Reading on Markdown</h2>
+
+<p>Github documentation on their markdown:  <a href="https://help.github.com/articles/github-flavored-markdown/">https://help.github.com/articles/github-flavored-markdown/</a>.</p>
+
+
+
+      </div>
+  
+  
+  حالا اجرا کنید:
+  
+<p dir="ltr">
+<code>
+	
+	jekyll serve -w
+	
+	</code>
+
+
+<p>
